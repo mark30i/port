@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Моє Портфоліо</title>
+    <style>
+        /* Стилі для всього сайту */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .about, .projects, .contact {
+            margin-top: 50px;
+        }
+
+        .about img {
+            max-width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .project {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .project div {
+            width: 45%;
+            margin: 10px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .project img:hover {
+            transform: scale(1.05);
+        }
+
+        .project a {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .project a:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact form input, .contact form textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .contact form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Моє Портфоліо</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">Про мене</a></li>
+            <li><a href="#projects">Проекти</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- Розділ "Про мене" -->
+    <section id="about" class="about">
+        <h2>Про мене</h2>
+        <img src="https://i.postimg.cc/446V9RV0/1000-F-455228712-e-ODCuf-Wit-PREd-Ai-Ow2w-EG7-Fv0ry-KJ3p-O.jpg" alt="Моє фото">
+        <p>Привіт! Я — веб-розробник з досвідом створення сучасних веб-сайтів. Моя мета — допомогти бізнесам і особистостям створювати ефективні та красиві веб-ресурси. У моєму портфоліо ви знайдете різноманітні проекти, що включають як статичні сайти, так і інтерактивні веб-додатки.</p>
+    </section>
+
+    <!-- Розділ "Проекти" -->
+    <section id="projects" class="projects">
+        <h2>Мої Проекти</h2>
+        <div class="project">
+            <div>
+                <img src="https://i.postimg.cc/SsqNnZNw/DALL-E-2024-12-01-12-14-01-A-vibrant-minimalistic-design-for-a-classic-Snake-game-The-scene-feat.webp" alt="Проект 1">
+                <h3>Проект 1</h3>
+                <p>Гра змійка.</p>
+                <a href=" https://mark30i.github.io/SNAKE/" target="_blank">Грати</a>
+            </div>
+            <div>
+                <img src="https://i.postimg.cc/FFVkVLMy/DALL-E-2024-12-01-12-16-42-A-colorful-and-minimalistic-design-for-a-Guess-the-Number-game-The-i.webp" alt="Проект 2">
+                <h3>Проект 2</h3>
+                <p>Гра вгадай число.</p>
+                <a href=" https://mark30i.github.io/FUNNY-GAME/" target="_blank">Грати</a>
+            </div>
+            <div>
+                <img src="https://i.postimg.cc/t4KgjR0R/DALL-E-2024-12-01-12-14-05-A-vibrant-minimalistic-design-for-a-classic-Tetris-game-The-scene-fea.webp" alt="Проект 3">
+                <h3>Проект 3</h3>
+                <p>Гра тетріс.</p>
+                <a href="https://mark30i.github.io/TETRIS/" target="_blank">Грати</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Розділ "Контакти" -->
+    <section id="contact" class="contact">
+        <h2>Зв'язатися зі мною</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Ваше ім'я" required>
+            <input type="email" id="email" placeholder="Ваш Email" required>
+            <textarea id="message" placeholder="Ваше повідомлення" rows="4" required></textarea>
+            <button type="submit">Надіслати</button>
+        </form>
+        <div id="form-message"></div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Моє Портфоліо</p>
+</footer>
+
+<script>
+    // Скрипт для обробки форми
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        const formMessage = document.getElementById('form-message');
+        
+        if (name && email && message) {
+            formMessage.textContent = `Дякуємо за ваше повідомлення, ${name}! Ми зв'яжемося з вами найближчим часом.`;
+            formMessage.style.color = 'green';
+        } else {
+            formMessage.textContent = 'Будь ласка, заповніть всі поля.';
+            formMessage.style.color = 'red';
+        }
+        
+        document.getElementById('contact-form').reset();  // Очищуємо форму
+    });
+</script>
+
+</body>
+</html>
+
